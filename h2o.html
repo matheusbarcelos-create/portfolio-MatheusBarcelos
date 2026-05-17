@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto H²O apresentado no XVIII ENTEC por Matheus Barcelos de Almeida.">
+    <title>Projeto H²O | XVIII ENTEC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="rev.js" defer></script>
+    <script src="mobilemenu.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <nav class="menu-desktop" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#toposite">INÍCIO</a></li>
+                    <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                    <li><a href="#intro">INTRODUÇÃO</a></li>
+                    <li><a href="#imagens">IMAGENS</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://wa.me/5534988375360" target="_blank" rel="noopener noreferrer">
+                    <button type="button"><i class="bi bi-whatsapp"></i></button>
+                </a>
+            </div>
+
+            <button class="btnabrir" id="abrirmobile" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="mobile" id="mobile" aria-hidden="true">
+                <button class="btnfechar" id="fecharmobile" type="button" aria-label="Fechar menu">
+                    <i class="bi bi-x-circle"></i>
+                </button>
+                <!-- BUG CORRIGIDO: mobile agora aponta para as mesmas seções do menu desktop -->
+                <nav aria-label="Menu mobile">
+                    <ul>
+                        <li><a href="#toposite">INÍCIO</a></li>
+                        <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                        <li><a href="#intro">INTRODUÇÃO</a></li>
+                        <li><a href="#imagens">IMAGENS</a></li>
+                        <li><a href="https://wa.me/5534988375360" rel="noopener noreferrer">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mobileoverl" id="mobileoverl" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="toposite" id="toposite">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txttopo scroll">
+                        <h1>PROJETO H²O<span> NO XVIII ENTEC!</span></h1>
+                        <p>Projeto desenvolvido e apresentado no XVIII ENTEC (Encontro de Tecnologia e Ciências),
+                            explorando soluções inovadoras relacionadas à temática da água e sustentabilidade com uso de
+                            IoT, sensores e inteligência artificial.</p>
+                        <div class="btn-contato">
+                            <a href="index.html#portif">
+                                <button type="button">VER PROJETOS</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="imgtopo scrollimg">
+                        <img src="img/entec1.jpg" width="370" height="500" alt="Projeto H²O no XVIII ENTEC" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialidades" id="tecnologias">
+            <div class="interface">
+                <h2 class="titulo">A TECNOLOGIA<span> POR TRÁS DO PROJETO.</span></h2><br>
+                <div class="flex">
+                    <div class="especibox especi">
+                        <i class="bi bi-braces" aria-hidden="true"></i>
+                        <h3>BACKEND / FRONTEND</h3>
+                        <p>Os dados são enviados para a plataforma ThingSpeak, que serviu como base para coleta e
+                            armazenamento. A partir dela, desenvolvemos um dashboard customizado em HTML para visualizar
+                            tudo em tempo real.</p>
+                    </div>
+                    <div class="especibox especii">
+                        <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+                        <h3>FIRMWARE</h3>
+                        <p>Programamos o ESP32 utilizando C++ (com o framework do Arduino). Ele é responsável por
+                            calcular a vazão, o volume e enviar esses dados via Wi-Fi.</p>
+                    </div>
+                    <div class="especibox especiii">
+                        <i class="bi bi-laptop" aria-hidden="true"></i>
+                        <h3>HARDWARE</h3>
+                        <p>No coração do sistema, temos um ESP32 atuando como o cérebro, lendo os dados do
+                            sensor de vazão YF-S201 instalado em linha com a mangueira.</p>
+                    </div>
+                    <div class="especibox especi">
+                        <i class="bi bi-download" aria-hidden="true"></i>
+                        <h3>BANNER DO ENTEC XVIII</h3>
+                        <a href="certificados/Banner-ENTEC2025-Ioth20-1.zip" aria-label="Baixar banner do ENTEC">
+                            <i class="bi bi-arrow-down-circle" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="intro">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txtsobre efectsobretxt">
+                        <h2>INTRODUÇÃO<span> E OBJETIVOS</span></h2>
+                        <p>Atualmente, as pautas sobre consumo consciente e preservação dos recursos naturais são de
+                            grande relevância em todo o mundo. Diante da crescente demanda por sustentabilidade nas
+                            áreas residencial e comercial, o uso eficiente da água tem se mostrado um desafio constante,
+                            principalmente pela falta de ferramentas eficientes para monitoramento em tempo real.</p>
+                        <p>Propõe-se o desenvolvimento de um sistema inteligente baseado em IoT para o monitoramento e
+                            otimização do consumo de água em edificações, utilizando sensores de fluxo de baixo custo
+                            instalados em pontos estratégicos, com análise em tempo real via inteligência artificial —
+                            visando à identificação de anomalias, detecção de vazamentos e sugestões de redução de
+                            desperdício.</p>
+                        <p>O objetivo principal é sugerir uma solução prática para otimizar a utilização da água,
+                            recurso fundamental e indispensável à vida. O sistema monitora padrões de uso, detecta
+                            consumos anormais e conscientiza os usuários sobre o mau gerenciamento hídrico.</p>
+                        <div class="btnsocial">
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7388904739788402688/"
+                                target="_blank" rel="noopener noreferrer" aria-label="Ver no LinkedIn">
+                                <button type="button"><i class="bi bi-linkedin" aria-hidden="true"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portif" id="imagens">
+            <div class="interface">
+                <h2 class="titulo">IMAGENS/<span>DESENVOLVIMENTO</span></h2>
+                <div class="flex">
+                    <div class="imgport porti"  style="background-image: url(img/ENTEC.jpg);"></div>
+                    <div class="imgport portii" style="background-image: url(img/ENTECC.jpg);"></div>
+                    <div class="imgport portiii" style="background-image: url(img/ENTECCC.jpg);"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txtsobre efectsobretxt">
+                        <h2>RESULTADOS<span> OBTIDOS</span></h2>
+                        <p>Nosso dashboard exibe as métricas mais importantes de forma clara: Vazão Instantânea em
+                            L/min, Volume Total acumulado e Status do Sistema — a funcionalidade-chave do projeto.</p>
+                        <p>O sistema identifica padrões anômalos de consumo. Como é possível ver nas imagens, o status
+                            muda de "Sistema Normal" (verde) para "Vazamento Detectado" (vermelho), alertando sobre
+                            desperdício de forma imediata.</p>
+                        <p>Apresentar no ENTEC foi uma experiência fantástica para validar a ideia e mostrar como
+                            ferramentas acessíveis podem criar soluções práticas para a sustentabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="linefot">
+                <div class="flex">
+                    <div class="btnsocial">
+                        <a href="https://www.instagram.com/matheusbarcelos034/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <button type="button"><i class="bi bi-instagram" aria-hidden="true"></i></button>
+                        </a>
+                        <a href="https://github.com/matheusbarcelos-create" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <button type="button"><i class="bi bi-github" aria-hidden="true"></i></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matheus-barcelos-de-almeida034/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <button type="button"><i class="bi bi-linkedin" aria-hidden="true"></i></button>
+                        </a>
+                        <a href="https://www.reddit.com/user/omautheus/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+                            <button type="button"><i class="bi bi-reddit" aria-hidden="true"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="linefot borda">
+                <address>
+                    <p>
+                        <i class="bi bi-envelope-at" aria-hidden="true"></i>
+                        <a href="mailto:matheusbarcelos@edu.uniube.br">matheusbarcelos@edu.uniube.br</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
