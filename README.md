@@ -2,6 +2,8 @@
 
 Este repositório contém o código-fonte do meu portfólio web pessoal. Ele foi desenvolvido para apresentar minha trajetória como estudante de Engenharia de Computação na Universidade de Uberaba, destacando minhas habilidades, projetos práticos e atuações extracurriculares.
 
+🔗 https://matheusbarcelos-create.github.io/Portfolio-MATHEUSBARCELOS/
+
 ## 🚀 Visão Geral do Projeto
 
 O site foi construído com foco em design responsivo, interatividade e clareza, sendo dividido em três páginas principais:
